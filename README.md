@@ -5,7 +5,7 @@ This is the mock for **_mobile utility service_** created from the original Soap
 
 |Resource | Description | API |
 | --- | --- | --- |
-| Validations | Check online or IK ticket serial number | POST /api/mobileutility/v1/validation |
+| Validations | Check online or IK ticket serial number | POST /api/mobileutility/v1/validations |
 | Stores | Fetch store locations and associated details |GET /api/mobileutility/v1/stores |
 
 The mobile utility service exposes non-authorised service endpoints and do not require access token.
@@ -13,19 +13,19 @@ The mobile utility service exposes non-authorised service endpoints and do not r
 ## Mock Implementation
 The mock service was implementd using the **_node_**-based version of **_mountebank_**. See http://www.mbtest.org/ for more details on how it works.
 
-The table below shows the complete list of software components used to implement the mock service. The list also includes the **_npm_** packages required to perform BDD tests using cucumber.
+The table below shows the complete list of software components used to implement the mock service. The list also includes the **_npm_** packages required to perform BDD tests using **_cucumber_**.
 
 |Software | Description | 
 | --- | --- |
 | **_mountebank_** | **npm** package primarily used to build the mock service |
 | **_cucumber_** | **npm** package for BDD testing |
-| **_request-promise_** | **npm** package to provide **promise** support for http processing |
+| **_request-promise_** | **npm** package to provide **promise** support for http processing used in the BDD implementation |
 | **_request_** | **npm** package required by **_request-promise_** |
 | **_assert_** | **npm** package used in BDD implementation |
 | **_moment_** | **npm** package used in BDD implementation |
 
 ## Mock Features
-The mock service implementation is simple matching of responses driven by pre-defined _online_ and _IK_ ticket serial numbers with each serial number representing a specific ticket checking result scenario. The scenarios are exactly the same scenarios used in the original ticket checking mobile application. 
+The mock service implementation is a simple static mapping of responses to the pre-defined _online_ and _IK_ ticket serial numbers with each serial number representing a specific ticket checking result scenario. The scenarios are exactly the same scenarios used in testing the original ticket checker mobile application. 
 
 ## Installation and Startup
 
@@ -74,11 +74,11 @@ docker build -t mobile-utility-mock .
 ```
 4. Start docker instance of the mock service
 ```bash
-docker run -it -p 2525:2525 -p 8000:8000 mobile-utility-mock
+docker run --name mobile-utilit-mock -it -p 2525:2525 -p 8000:8000 mobile-utility-mock
 ```
 > Port 2525 is mountebank's own internal port number and 8000 is the internal port number of the mobile utility mock service. The internal ports can be mapped to different external ports most appropriate for the installation as shown in the example below.
 ```bash
-docker run -it -p 5555:2525 -p 8888:8000 mobile-utility-mock
+docker run --name mobile-utility-mock -it -p 5555:2525 -p 8888:8000 mobile-utility-mock
 ```
 
 ## Verifying the mock
