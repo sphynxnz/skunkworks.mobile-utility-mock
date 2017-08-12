@@ -82,13 +82,28 @@ docker run --name mobile-utility-mock -it -p 5555:2525 -p 8888:8000 mobile-utili
 ```
 
 ## Verifying the mock
-To verify the mobile utility mock service, run the test scenarios defined in **~/skunkworks.mobile-utility-mock/test/ticketchecker_mb.feature** by invoking the following command:
+To verify the mobile utility mock service, run the following tests:
+
+**1. Ticket validation test**
+
+Run test scenarios defined in **~/skunkworks.mobile-utility-mock/test/ticketchecker_mb.feature** by invoking the following command:
 
 ```bash
 npm run test:checker
 ```
 
 This is a sample test run output [test-checker.out](https://github.com/sphynxnz/skunkworks.mobile-utility-mock/blob/master/test-checker.out) which contains ANSI escape codes for displaying colours in a terminal.
+
+**2. Stores finder test**
+
+Run test scenarios defined in **~/skunkworks.mobile-utility-mock/test/storesfinder_mb.feature** by invoking the following command:
+
+```bash
+npm run test:stores
+```
+
+This is a sample test run output [test-stores.out](https://github.com/sphynxnz/skunkworks.mobile-utility-mock/blob/master/test-stores.out) which contains ANSI escape codes for displaying colours in a terminal.
+
 
 | _EOD_ |
 |---|
