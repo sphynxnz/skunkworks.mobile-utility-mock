@@ -88,7 +88,8 @@ To verify the mobile utility mock service, run the test scenarios defined in **~
 npm run test:checker
 ```
 
-This is a sample test run output [test-checker.out](https://github.com/sphynxnz/skunkworks.mobile-utility-mock/blob/master/test-checker.out) 
+This is a sample test run output [test-checker.out](https://github.com/sphynxnz/skunkworks.mobile-utility-mock/blob/master/test-checker.out)
+
 | _EOD_ |
 |---|
 
