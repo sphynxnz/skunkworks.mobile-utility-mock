@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start:mobile-utility:mock": "node ./node_modules/.bin/mb --configfile ./mobile-utility-imposter.json",
-    "test:checker": "cucumberjs --require ./test/lib ./test/ticketchecker_mb.feature"
+    "test:checker": "cucumberjs --require ./test/lib ./test/ticketchecker_mb.feature",
+    "test:stores": "cucumberjs --require ./test/lib ./test/storesfinder_mb.feature"
   },
   "keywords": [
     "mobile",

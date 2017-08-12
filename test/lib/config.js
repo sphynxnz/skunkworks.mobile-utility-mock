@@ -11,6 +11,6 @@
  */
 module.exports = {
   baseUrl: {
-    ticketchecker_mb: 'http://localhost:8000/api/mobileutility/v1'
+    mobileutility_mb: 'http://localhost:8000/api/mobileutility/v1'
   }
 }

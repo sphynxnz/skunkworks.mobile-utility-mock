@@ -128,6 +128,12 @@ defineSupportCode(function ({Given, When, Then}) {
 
   Then(/^The closest store is "(.*)"$/, function (expectedValue, callback) {
     const actualValue = this.getValue('stores[0].name')
+    if (actualValue != expectedValue && this.getValue('stores[1].name') == expectedValue
+      && this.getValue('stores[0].distance') == this.getValue('stores[1].distance')) {
+      console.log('Several stores have the same distance from the current location')
+      console.log('stores[0]:' + actualValue + ', stores[1]=' + expectedValue)
+      expectedValue = actualValue  
+    }
     assert.equal(actualValue, expectedValue, this.prettyPrintError(actualValue, expectedValue))
     callback()
   })

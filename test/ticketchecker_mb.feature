@@ -1,4 +1,4 @@
-@baseUrl @baseUrl-ticketchecker_mb
+@baseUrl @baseUrl-mobileutility_mb
 Feature: Ticket checker examples
   The following are test scenarios againts the ESI ticket validation mock service
 
