@@ -1,0 +1,10 @@
+# logs
+log
+*.log
+
+# node modules
+node_modules
+
+# docker images with .tar, .zip extension
+*.tar
+*.zip
