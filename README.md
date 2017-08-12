@@ -74,7 +74,7 @@ docker build -t mobile-utility-mock .
 ```
 4. Start docker instance of the mock service
 ```bash
-docker run --name mobile-utilit-mock -it -p 2525:2525 -p 8000:8000 mobile-utility-mock
+docker run --name mobile-utility-mock -it -p 2525:2525 -p 8000:8000 mobile-utility-mock
 ```
 > Port 2525 is mountebank's own internal port number and 8000 is the internal port number of the mobile utility mock service. The internal ports can be mapped to different external ports most appropriate for the installation as shown in the example below.
 ```bash
