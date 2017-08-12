@@ -1,0 +1,27 @@
+{
+  "name": "mobile-utility-mock",
+  "version": "1.0.0",
+  "description": "Mobile Utility Mock Service",
+  "main": "index.js",
+  "scripts": {
+    "start:mobile-utility:mock": "node ./node_modules/.bin/mb --configfile ./mobile-utility-imposter.json",
+    "test:checker": "cucumberjs --require ./test/lib ./test/ticketchecker_mb.feature"
+  },
+  "keywords": [
+    "mobile",
+    "utility",
+    "mock",
+    "service"
+  ],
+  "author": "flpc",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "cucumber": "^2.3.1",
+    "moment": "^2.18.1",
+    "mountebank": "^1.12.0",
+    "random-words": "0.0.1",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
+}

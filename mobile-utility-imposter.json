@@ -1,0 +1,1683 @@
+{
+	"protocol": "http",
+	"port": 8000,
+	"name": "mobile-utility-mock",
+	"stubs": [{
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660089034281259"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3101,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660177579522026"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"LOSER\",\"resultCode\":2101,\"currency\":\"$\",\"message\":\"Not a winning ticket\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\",\"commMessage\":\"It feels 'sweet as' to give back.  You've just helped fund over 3,000 community groups across New Zealand. Your ticket helps fund lottery grants in health, sport, arts and culture.\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660036605441264"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3102,\"currency\":\"$\",\"message\":\"Results not in yet, please try again later\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660345710082082"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3103,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660423697961229"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3104,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660100391042004"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3105,\"currency\":\"$\",\"message\":\"This ticket has already been claimed\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660539153921201"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3106,\"currency\":\"$\",\"message\":\"This ticket has expired. For more information visit your nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660432217652064"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":1101,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660358817292008"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":1102,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660096898612083"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3107,\"currency\":\"$\",\"message\":\"This ticket has already been claimed\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660023498252027"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3108,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660073303052574"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3109,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660431562292053"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3111,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660358161932094"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":1103,\"currency\":\"$\",\"message\":\"Please take yout ticket to the nearest Lotto store to collect your prize\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660256222761281"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3112,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660022842892016"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3113,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660607308852542"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3114,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660533908492583"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3115,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660271948852530"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"WINNER\",\"resultCode\":1104,\"currency\":\"$\",\"message\":\"Please take your ticket to the nearest Lotto store to claim your prize\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\",\"majorPrizeMessage\":\"A MAJOR PRIZE\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660088378921347"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"WINNER\",\"resultCode\":1105,\"currency\":\"$\",\"message\":\"Please take your ticket to the nearest Lotto store to claim your prize\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\",\"majorPrizeMessage\":\"A MAJOR PRIZE\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660424353321339"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":1106,\"currency\":\"$\",\"message\":\"Please take yout ticket to the nearest Lotto store to collect your prize\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660371924481344"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":1107,\"currency\":\"$\",\"message\":\"Please take yout ticket to the nearest Lotto store to collect your prize\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660089034261358"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"WINNER\",\"resultCode\":1108,\"currency\":\"$\",\"message\":\"Please take yout ticket to the nearest Lotto store to collect your prize\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660670881322058"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"WINNER\",\"resultCode\":1109,\"currency\":\"$\",\"message\":\"Please take your ticket to the nearest Lotto store to claim your prize\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\",\"majorPrizeMessage\":\"A MAJOR PRIZE\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660555537922074"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"WINNER\",\"resultCode\":1110,\"currency\":\"$\",\"message\":\"Please take your ticket to the nearest Lotto store to claim your prize\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\",\"majorPrizeMessage\":\"A MAJOR PRIZE\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660335521322046"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"amount\":0,\"resultType\":\"LOSER\",\"resultCode\":2102,\"currency\":\"$\",\"message\":\"You have draws remaining for this ticket\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\",\"commMessage\":\"By playing Lotto you're helping to save lives at sea!  Coastguard has received over $4.3 million in funding from Lotto over the past two years.  Thanks for making New Zealand an even better place to live!\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660220177922062"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":1111,\"currency\":\"$\",\"message\":\"This ticket has already been claimed\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660670225962047"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"amount\":0,\"resultType\":\"OTHER\",\"resultCode\":3116,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660554882562063"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"WINNER\",\"resultCode\":1112,\"currency\":\"$\",\"message\":\"Please take your ticket to the nearest Lotto store to claim your prize\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\",\"majorPrizeMessage\":\"A MAJOR PRIZE\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660607964212553"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"amount\":0,\"bonusTickets\":9,\"resultType\":\"WINNER\",\"resultCode\":1113,\"currency\":\"$\",\"message\":\"Please take your ticket to the nearest Lotto store to collect your prize\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660534563852594"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"amount\":0,\"resultType\":\"OTHER\",\"resultCode\":3118,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660271948852530"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"WINNER\",\"resultCode\":1104,\"currency\":\"$\",\"message\":\"Please take your ticket to the nearest Lotto store to claim your prize\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\",\"majorPrizeMessage\":\"A MAJOR PRIZE\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660562744331394"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"amount\":0,\"resultType\":\"LOSER\",\"resultCode\":2103,\"currency\":\"$\",\"message\":\"Not a winning ticket\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\",\"commMessage\":\"Did you know that by playing Lotto you're helping fund grassroots sport in New Zealand?  Sport NZ is the largest recipient of Lotto funding, receiving over $40 million last year to support sport and recreation in New Zealand. \"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "0660051678722018"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"amount\":0,\"resultType\":\"OTHER\",\"resultCode\":3117,\"currency\":\"$\",\"message\":\"This ticket has already been paid\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420700187937509924"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"amount\":20,\"resultType\":\"WINNER\",\"resultCode\":1201,\"currency\":\"$\",\"message\":\"Please take your ticket to the nearest Lotto store to collect your prize\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420700229002409815"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"WINNER\",\"resultCode\":1202,\"currency\":\"$\",\"message\":\"Please take your ticket to the nearest Lotto store to claim your prize\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\",\"majorPrizeMessage\":\"A MAJOR PRIZE\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420700322291700780"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"LOSER\",\"resultCode\":2201,\"currency\":\"$\",\"message\":\"Not a winning ticket\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\",\"commMessage\":\"Did you know that by playing Lotto you're helping to fund thousands of community projects around New Zealand?  Last year Lotto players raised approximately $200 million for the community!\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420700442424501859"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":1203,\"currency\":\"$\",\"message\":\"This ticket has already been claimed\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420700576905905689"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":1204,\"currency\":\"$\",\"message\":\"This ticket has already been claimed\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420700608165400118"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":1205,\"currency\":\"$\",\"message\":\"This ticket has already been claimed\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420700793273209906"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":1206,\"currency\":\"$\",\"message\":\"This ticket has already been claimed\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420700894098204143"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3201,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420700920101400090"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3202,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420701031841204610"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3203,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420701127098302337"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3204,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420701251118606056"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3205,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420701344467106945"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3206,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420701430391603248"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3207,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420701517020802241"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3208,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420701695194909734"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3209,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420701764109705177"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3210,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420701811088009649"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"WINNER\",\"resultCode\":1207,\"currency\":\"$\",\"message\":\"Please take your ticket to the nearest Lotto store to collect your prize\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420701945593409592"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3211,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420702033290403334"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3212,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420702189626307580"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3210,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420702232381500786"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3214,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420702410853508724"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3216,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420702560198406065"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3217,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420702694435600051"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"bonusTickets\":1,\"resultType\":\"WINNER\",\"resultCode\":3242,\"currency\":\"$\",\"message\":\"Please take your ticket to the nearest Lotto store to collect your prize\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9430016273991111"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":9001,\"currency\":\"$\",\"message\":\"Ticket Serial Number Incorrect\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9430016273992222"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":9001,\"currency\":\"$\",\"message\":\"Ticket Serial Number Incorrect\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9430016273993333"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":9001,\"currency\":\"$\",\"message\":\"Ticket Serial Number Incorrect\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9430016273994444"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":9001,\"currency\":\"$\",\"message\":\"Ticket Serial Number Incorrect\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9430016273995555"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":9001,\"currency\":\"$\",\"message\":\"Ticket Serial Number Incorrect\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420702889747900451"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3218,\"currency\":\"$\",\"message\":\"Sorry, results are not available yet. Please check back soon.\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420702985434407609"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3219,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420703042003803563"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3220,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420703137793402907"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3221,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420703258778409238"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3222,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420703394656202867"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3223,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420703400324702756"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3224,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420703524221700247"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3225,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420703648373806222"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3226,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420703794396107128"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3227,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420703821044009361"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3228,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420703976627308157"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3229,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420704051499901980"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3230,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420704185349505669"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3231,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420704269985008156"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3232,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420704393507209560"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3233,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420704499441307888"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3234,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420704559427208568"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3235,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420704673137406891"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3236,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420704735802609219"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3237,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420704811979306805"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":9001,\"currency\":\"$\",\"message\":\"Incorrect serial number entered, please try again\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420704914830707289"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3239,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420705096601100694"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3222,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}, {
+		"predicates": [{
+			"equals": {
+				"method": "POST",
+				"path": "/api/mobileutility/v1/validations",
+				"body": {
+					"serialNumber": "9891420705113164804969"
+				}
+			}
+		}],
+		"responses": [{
+			"is": {
+				"statusCode": 200,
+				"headers": {
+					"content-type": "application/json; charset=utf-8"
+				},
+				"body": "{\"validationResult\":{\"resultType\":\"OTHER\",\"resultCode\":3241,\"currency\":\"$\",\"message\":\"Unable to determine ticket outcome, please take your ticket to the nearest Lotto store\",\"linkText\":\"Tell me more\",\"linkUrl\":\"/winning-happens\"},\"response\":{\"status\":\"success\",\"message\":\"System available\"}}"
+			}
+		}]
+	}],
+	"_links": {
+		"self": {
+			"href": "http://localhost:2525/imposters/8080"
+		}
+	}
+}
