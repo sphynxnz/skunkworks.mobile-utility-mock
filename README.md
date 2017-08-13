@@ -27,6 +27,9 @@ The table below shows the complete list of software components used to implement
 ## Mock Features
 The mock service implementation is a simple static mapping of responses to the pre-defined _online_ and _IK_ ticket serial numbers with each serial number representing a specific ticket checking result scenario. The scenarios are exactly the same scenarios used in testing the original ticket checker mobile application. 
 
+This is the spreadsheet containing the ticket checking scenarios used for this mock service.
+- [ticket-serial-numbers-updated-dbb.xlsx](https://github.com/sphynxnz/skunkworks.mobile-utility-mock/blob/master/ticket-serial-numbers-updated-dbb.xlsx)
+
 ## Installation and Startup
 
 
@@ -86,7 +89,7 @@ To verify the mobile utility mock service, run the following tests:
 
 **1. Ticket validation test**
 
-Run test scenarios defined in **~/skunkworks.mobile-utility-mock/test/ticketchecker_mb.feature** by invoking the following command:
+Run test scenarios defined in **~/skunkworks.mobile-utility-mock/test/ticketchecker.feature** by invoking the following command:
 
 ```bash
 npm run test:checker
@@ -96,10 +99,10 @@ This is a sample test run output [test-checker.out](https://github.com/sphynxnz/
 
 **2. Stores finder test**
 
-Run test scenarios defined in **~/skunkworks.mobile-utility-mock/test/storesfinder_mb.feature** by invoking the following command:
+Run test scenarios defined in **~/skunkworks.mobile-utility-mock/test/storesfinde.feature** by invoking the following command:
 
 ```bash
-npm run test:stores
+npm run test:finder
 ```
 
 This is a sample test run output [test-stores.out](https://github.com/sphynxnz/skunkworks.mobile-utility-mock/blob/master/test-stores.out) which contains ANSI escape codes for displaying colours in a terminal.
@@ -107,4 +110,3 @@ This is a sample test run output [test-stores.out](https://github.com/sphynxnz/s
 
 | _EOD_ |
 |---|
-

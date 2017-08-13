@@ -11,6 +11,6 @@
  */
 module.exports = {
   baseUrl: {
-    mobileutility_mb: 'http://localhost:8000/api/mobileutility/v1'
+    mobileutility: 'http://localhost:8000/api/mobileutility/v1'
   }
 }
