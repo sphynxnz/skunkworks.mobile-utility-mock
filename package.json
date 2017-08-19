@@ -6,6 +6,7 @@
   "scripts": {
     "start:mobile-utility:mock": "node ./node_modules/.bin/mb --configfile ./mobile-utility-imposter.json",
     "test:checker": "cucumberjs --require ./test/lib ./test/ticketchecker.feature",
+    "test:checker2": "cucumberjs --require ./test/lib ./test/ticketchecker2.feature",
     "test:finder": "cucumberjs --require ./test/lib ./test/storesfinder.feature"
   },
   "keywords": [
