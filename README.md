@@ -28,7 +28,7 @@ The table below shows the complete list of software components used to implement
 The mock service implementation is a simple static mapping of responses to the pre-defined _online_ and _IK_ ticket serial numbers with each serial number representing a specific ticket checking result scenario. The scenarios are exactly the same scenarios used in testing the original ticket checker mobile application. 
 
 This is the spreadsheet containing the ticket checking scenarios used for this mock service. 
-- [MobileCheckerSerialNumbers-20170819.xlsx](https://github.com/lotto-nz/skunkworks.mobile-utility-mock/blob/master/MobileCheckerSerialNumbers-20170819.xlsx)
+- [MobileCheckerSerialNumbers-20170819.xlsx](https://github.com/sphynxnz/skunkworks.mobile-utility-mock/blob/master/MobileCheckerSerialNumbers-20170819.xlsx)
 
 > There are some scenarios where the **result** may have changed over time since the first mobile app implementation, but the **code** remained constant. This has to be further validated againts the production version of the mobile utility service.
 
@@ -38,7 +38,7 @@ This is the spreadsheet containing the ticket checking scenarios used for this m
 ### 1. Download or clone repository
 
 ```bash
-git clone https://github.com/lotto-nz/skunkworks.instant-play-mock.git
+git clone https://github.com/sphynxnz/skunkworks.instant-play-mock.git
 ```
 
 ### 2. Install required npm packages
@@ -104,7 +104,7 @@ npm run test:checker2
 ```
 Both tests use the same set of test scenarios, except different representation in the gherkin coding of the BDD test scenarios.
 
-[test-checker.out](https://github.com/lotto-nz/skunkworks.mobile-utility-mock/blob/master/test-checker.out) and [test-checker2.out](https://github.com/lotto-nz/skunkworks.mobile-utility-mock/blob/master/test-checker2.out) are sample output files for the ticket checking. The files contain ANSI escape codes for displaying colours in a terminal.
+[test-checker.out](https://github.com/sphynxnz/skunkworks.mobile-utility-mock/blob/master/test-checker.out) and [test-checker2.out](https://github.com/sphynxnz/skunkworks.mobile-utility-mock/blob/master/test-checker2.out) are sample output files for the ticket checking. The files contain ANSI escape codes for displaying colours in a terminal.
 
 **2. Stores finder test**
 
@@ -114,7 +114,7 @@ Run test scenarios defined in **~/skunkworks.mobile-utility-mock/test/storesfind
 npm run test:finder
 ```
 
-This is a sample test run output [test-finder.out](https://github.com/lotto-nz/skunkworks.mobile-utility-mock/blob/master/test-finder.out) which contains ANSI escape codes for displaying colours in a terminal.
+This is a sample test run output [test-finder.out](https://github.com/sphynxnz/skunkworks.mobile-utility-mock/blob/master/test-finder.out) which contains ANSI escape codes for displaying colours in a terminal.
 
 
 | _EOD_ |
