@@ -1,6 +1,6 @@
 /**
  * Cloned from https://github.com/carbonrobot/relish.
- * Original version worked in cucumber@1.0.0, but not in version cucumber@2.3.1
+ * Original version worked in cucumber@1.0.0, but not in latest version.
  * Updated to work in latest version cucumber@2.3.1
  */
 
@@ -127,5 +127,5 @@ defineSupportCode(function ({setWorldConstructor}) {
 })
 
 defineSupportCode(function ({setDefaultTimeout}) {
-  setDefaultTimeout(60 * 1000);
+  setDefaultTimeout(60 * 1000)
 })

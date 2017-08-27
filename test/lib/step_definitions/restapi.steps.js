@@ -116,6 +116,10 @@ defineSupportCode(function ({Given, When, Then}) {
     this.setLongitude(longitude)
   })
 
+  Given(/^maxcount set to (.*)$/, function (maxcount) {
+    this.setMaxcount(maxcount)
+  })
+
   Given(/^radius set to (.*)$/, function (radius) {
     this.setRadius(radius)
   })
@@ -132,15 +136,16 @@ defineSupportCode(function ({Given, When, Then}) {
       this.getValue('stores[0].distance') == this.getValue('stores[1].distance')) {
       console.log('Several stores have the same distance from the current location')
       console.log('stores[0]:' + actualValue + ', stores[1]=' + expectedValue)
-      expectedValue = actualValue  
+      expectedValue = actualValue
     }
     assert.equal(actualValue, expectedValue, this.prettyPrintError(actualValue, expectedValue))
     callback()
   })
 
   When(/^I fetch store locations$/, function () {
-    const uri = '/stores?channelid=1' + '&longitude=' + this.longitude + '&latitude=' + this.latitude + 
-      (this.radius ? '&radius=' + this.radius : '')
+    const uri = '/stores?channelid=1' + '&longitude=' + this.longitude + '&latitude=' + this.latitude +
+      (this.radius ? '&radius=' + this.radius : '') +
+      (this.maxcount ? '&maxcount=' + this.maxcount : '')
     return this.httpGet(uri)
   })
 
