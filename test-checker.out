@@ -112,7 +112,7 @@ Feature: Ticket checker examples
       """[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "3105"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -148,7 +148,7 @@ Feature: Ticket checker examples
       """[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1101"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -166,7 +166,7 @@ Feature: Ticket checker examples
       """[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1102"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -184,7 +184,7 @@ Feature: Ticket checker examples
       """[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "3107"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -238,7 +238,7 @@ Feature: Ticket checker examples
       """[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "3107"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -274,7 +274,7 @@ Feature: Ticket checker examples
       """[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1103"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -366,6 +366,7 @@ Feature: Ticket checker examples
   [32m✔ Then The response property "response.status" should be "success"[39m
   [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1104"[39m
+  [32m✔ And The response property "validationResult.majorPrizeMessage" should be "A MAJOR PRIZE"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
   Scenario: OL TICKET - MID_TIER_WINNER
@@ -384,6 +385,7 @@ Feature: Ticket checker examples
   [32m✔ Then The response property "response.status" should be "success"[39m
   [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1105"[39m
+  [32m✔ And The response property "validationResult.majorPrizeMessage" should be "A MAJOR PRIZE"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
   Scenario: OL TICKET - HIGH_WITH_NO_EXCHANGE
@@ -400,7 +402,7 @@ Feature: Ticket checker examples
       """[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1106"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -418,7 +420,7 @@ Feature: Ticket checker examples
       """[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1107"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -474,6 +476,7 @@ Feature: Ticket checker examples
   [32m✔ Then The response property "response.status" should be "success"[39m
   [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1109"[39m
+  [32m✔ And The response property "validationResult.majorPrizeMessage" should be "A MAJOR PRIZE"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
   Scenario: OL TICKET - DIVISION_WINNER
@@ -544,7 +547,7 @@ Feature: Ticket checker examples
       """[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1111"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -710,7 +713,7 @@ Feature: Ticket checker examples
   [32m✔ And The response property "validationResult.resultCode" should be "3117"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
-  Scenario: OL TICKET - PAID_BY_EFT
+  Scenario: OL TICKET - PAID_BY_EFT - Using SoapUI mock, simulates timeout
   [32m✔ Given The json request data[39m
       [32m"""
       {
@@ -722,10 +725,619 @@ Feature: Ticket checker examples
         "emailAddress": "userid08@dummy.co.nz"
       }    
       """[39m
+{ StatusCodeError: 500 - {"response":{"status":"failure","code":7000,"message":"Service is unavailable. Please try again later.","error":{"code":"ESOCKETTIMEDOUT","connect":false}}}
+    at new StatusCodeError (/Users/fcontreras/GITREPO/skunkworks.mobile-utility-mock/node_modules/request-promise-core/lib/errors.js:32:15)
+    at Request.plumbing.callback (/Users/fcontreras/GITREPO/skunkworks.mobile-utility-mock/node_modules/request-promise-core/lib/plumbing.js:104:33)
+    at Request.RP$callback [as _callback] (/Users/fcontreras/GITREPO/skunkworks.mobile-utility-mock/node_modules/request-promise-core/lib/plumbing.js:46:31)
+    at Request.self.callback (/Users/fcontreras/GITREPO/skunkworks.mobile-utility-mock/node_modules/request/request.js:188:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:194:7)
+    at Request.<anonymous> (/Users/fcontreras/GITREPO/skunkworks.mobile-utility-mock/node_modules/request/request.js:1171:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:191:7)
+    at IncomingMessage.<anonymous> (/Users/fcontreras/GITREPO/skunkworks.mobile-utility-mock/node_modules/request/request.js:1091:12)
+    at Object.onceWrapper (events.js:293:19)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:188:7)
+    at endReadableNT (_stream_readable.js:975:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+  name: 'StatusCodeError',
+  statusCode: 500,
+  message: '500 - {"response":{"status":"failure","code":7000,"message":"Service is unavailable. Please try again later.","error":{"code":"ESOCKETTIMEDOUT","connect":false}}}',
+  error: 
+   { response: 
+      { status: 'failure',
+        code: 7000,
+        message: 'Service is unavailable. Please try again later.',
+        error: [Object] } },
+  options: 
+   { method: 'POST',
+     uri: 'http://localhost:8000/api/mobileutility/v1/validations',
+     body: 
+      { serialNumber: '0500626298931317',
+        channelId: 1,
+        format: '1',
+        source: '192.168.100.100',
+        deviceId: 'AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE',
+        emailAddress: 'userid08@dummy.co.nz' },
+     json: true,
+     resolveWithFullResponse: true,
+     callback: [Function: RP$callback],
+     transform: undefined,
+     simple: true,
+     transform2xxOnly: false },
+  response: 
+   IncomingMessage {
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: true,
+        endEmitted: true,
+        reading: false,
+        sync: true,
+        needReadable: false,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        defaultEncoding: 'utf8',
+        ranOut: false,
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: false,
+     domain: null,
+     _events: 
+      { end: [Object],
+        close: [Object],
+        data: [Function],
+        error: [Function] },
+     _eventsCount: 4,
+     _maxListeners: undefined,
+     socket: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 8,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        destroyed: true,
+        _bytesDispatched: 348,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Object],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1 },
+     connection: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 8,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        destroyed: true,
+        _bytesDispatched: 348,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Object],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1 },
+     httpVersionMajor: 1,
+     httpVersionMinor: 1,
+     httpVersion: '1.1',
+     complete: true,
+     headers: 
+      { 'content-type': 'application/json; charset=utf-8',
+        connection: 'close',
+        date: 'Sun, 27 Aug 2017 22:22:30 GMT',
+        'transfer-encoding': 'chunked' },
+     rawHeaders: 
+      [ 'content-type',
+        'application/json; charset=utf-8',
+        'Connection',
+        'close',
+        'Date',
+        'Sun, 27 Aug 2017 22:22:30 GMT',
+        'Transfer-Encoding',
+        'chunked' ],
+     trailers: {},
+     rawTrailers: [],
+     upgrade: false,
+     url: '',
+     method: null,
+     statusCode: 500,
+     statusMessage: 'Internal Server Error',
+     client: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 8,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        destroyed: true,
+        _bytesDispatched: 348,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Object],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1 },
+     _consuming: true,
+     _dumped: false,
+     req: 
+      ClientRequest {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 5,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: false,
+        _removedHeader: [Object],
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [Object],
+        connection: [Object],
+        _header: 'POST /api/mobileutility/v1/validations HTTP/1.1\r\nhost: localhost:8000\r\naccept: application/json\r\ncontent-type: application/json\r\ncontent-length: 177\r\nConnection: close\r\n\r\n',
+        _headers: [Object],
+        _headerNames: [Object],
+        _onPendingData: null,
+        agent: [Object],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'POST',
+        path: '/api/mobileutility/v1/validations',
+        _ended: true,
+        res: [Circular],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null },
+     request: 
+      Request {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 5,
+        _maxListeners: undefined,
+        method: 'POST',
+        uri: [Object],
+        body: '{"serialNumber":"0500626298931317","channelId":1,"format":"1","source":"192.168.100.100","deviceId":"AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE","emailAddress":"userid08@dummy.co.nz"}',
+        resolveWithFullResponse: true,
+        readable: true,
+        writable: true,
+        explicitMethod: true,
+        _qs: [Object],
+        _auth: [Object],
+        _oauth: [Object],
+        _multipart: [Object],
+        _redirect: [Object],
+        _tunnel: [Object],
+        _rp_resolve: [Function],
+        _rp_reject: [Function],
+        _rp_promise: [Object],
+        _rp_callbackOrig: undefined,
+        callback: [Function],
+        _rp_options: [Object],
+        headers: [Object],
+        setHeader: [Function],
+        hasHeader: [Function],
+        getHeader: [Function],
+        removeHeader: [Function],
+        localAddress: undefined,
+        pool: {},
+        dests: [],
+        __isRequestRequest: true,
+        _callback: [Function: RP$callback],
+        proxy: null,
+        tunnel: false,
+        setHost: true,
+        originalCookieHeader: undefined,
+        _disableCookies: true,
+        _jar: undefined,
+        port: '8000',
+        host: 'localhost',
+        path: '/api/mobileutility/v1/validations',
+        _json: true,
+        httpModule: [Object],
+        agentClass: [Object],
+        agent: [Object],
+        _started: true,
+        href: 'http://localhost:8000/api/mobileutility/v1/validations',
+        req: [Object],
+        ntick: true,
+        response: [Circular],
+        originalHost: 'localhost:8000',
+        originalHostHeaderName: 'host',
+        responseContent: [Circular],
+        _destdata: true,
+        _ended: true,
+        _callbackCalled: true },
+     toJSON: [Function: responseToJSON],
+     caseless: Caseless { dict: [Object] },
+     read: [Function],
+     body: { response: [Object] } } }
   [32m✔ When I make a POST request to "/validations"[39m
-  [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
-  [32m✔ And The response property "validationResult.resultCode" should be "3117"[39m
+  [32m✔ Then The response property "response.status" should be "failure"[39m
+  [32m✔ And The response property "response.code" should be "7000"[39m
+
+  [36m@baseUrl @baseUrl-mobileutility[39m
+  Scenario: OL TICKET - MISSING_SCENARIO
+  [32m✔ Given The json request data[39m
+      [32m"""
+      {
+        "serialNumber": "0660334865962099",
+        "channelId": 1,
+        "format": "1",
+        "source": "192.168.100.100",
+        "deviceId": "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE",
+        "emailAddress": "userid08@dummy.co.nz"
+      }    
+      """[39m
+{ StatusCodeError: 400 - {"response":{"status":"failure","code":8001,"message":"Unable to determine ticket outcome. Please take your ticket to the nearest Lotto store"}}
+    at new StatusCodeError (/Users/fcontreras/GITREPO/skunkworks.mobile-utility-mock/node_modules/request-promise-core/lib/errors.js:32:15)
+    at Request.plumbing.callback (/Users/fcontreras/GITREPO/skunkworks.mobile-utility-mock/node_modules/request-promise-core/lib/plumbing.js:104:33)
+    at Request.RP$callback [as _callback] (/Users/fcontreras/GITREPO/skunkworks.mobile-utility-mock/node_modules/request-promise-core/lib/plumbing.js:46:31)
+    at Request.self.callback (/Users/fcontreras/GITREPO/skunkworks.mobile-utility-mock/node_modules/request/request.js:188:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:194:7)
+    at Request.<anonymous> (/Users/fcontreras/GITREPO/skunkworks.mobile-utility-mock/node_modules/request/request.js:1171:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:191:7)
+    at IncomingMessage.<anonymous> (/Users/fcontreras/GITREPO/skunkworks.mobile-utility-mock/node_modules/request/request.js:1091:12)
+    at Object.onceWrapper (events.js:293:19)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:188:7)
+    at endReadableNT (_stream_readable.js:975:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+  name: 'StatusCodeError',
+  statusCode: 400,
+  message: '400 - {"response":{"status":"failure","code":8001,"message":"Unable to determine ticket outcome. Please take your ticket to the nearest Lotto store"}}',
+  error: 
+   { response: 
+      { status: 'failure',
+        code: 8001,
+        message: 'Unable to determine ticket outcome. Please take your ticket to the nearest Lotto store' } },
+  options: 
+   { method: 'POST',
+     uri: 'http://localhost:8000/api/mobileutility/v1/validations',
+     body: 
+      { serialNumber: '0660334865962099',
+        channelId: 1,
+        format: '1',
+        source: '192.168.100.100',
+        deviceId: 'AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE',
+        emailAddress: 'userid08@dummy.co.nz' },
+     json: true,
+     resolveWithFullResponse: true,
+     callback: [Function: RP$callback],
+     transform: undefined,
+     simple: true,
+     transform2xxOnly: false },
+  response: 
+   IncomingMessage {
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: true,
+        endEmitted: true,
+        reading: false,
+        sync: true,
+        needReadable: false,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        defaultEncoding: 'utf8',
+        ranOut: false,
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: false,
+     domain: null,
+     _events: 
+      { end: [Object],
+        close: [Object],
+        data: [Function],
+        error: [Function] },
+     _eventsCount: 4,
+     _maxListeners: undefined,
+     socket: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 8,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        destroyed: true,
+        _bytesDispatched: 348,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Object],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1 },
+     connection: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 8,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        destroyed: true,
+        _bytesDispatched: 348,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Object],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1 },
+     httpVersionMajor: 1,
+     httpVersionMinor: 1,
+     httpVersion: '1.1',
+     complete: true,
+     headers: 
+      { 'content-type': 'application/json; charset=utf-8',
+        connection: 'close',
+        date: 'Sun, 27 Aug 2017 22:22:30 GMT',
+        'transfer-encoding': 'chunked' },
+     rawHeaders: 
+      [ 'content-type',
+        'application/json; charset=utf-8',
+        'Connection',
+        'close',
+        'Date',
+        'Sun, 27 Aug 2017 22:22:30 GMT',
+        'Transfer-Encoding',
+        'chunked' ],
+     trailers: {},
+     rawTrailers: [],
+     upgrade: false,
+     url: '',
+     method: null,
+     statusCode: 400,
+     statusMessage: 'Bad Request',
+     client: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 8,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        destroyed: true,
+        _bytesDispatched: 348,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Object],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1 },
+     _consuming: true,
+     _dumped: false,
+     req: 
+      ClientRequest {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 5,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: false,
+        _removedHeader: [Object],
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [Object],
+        connection: [Object],
+        _header: 'POST /api/mobileutility/v1/validations HTTP/1.1\r\nhost: localhost:8000\r\naccept: application/json\r\ncontent-type: application/json\r\ncontent-length: 177\r\nConnection: close\r\n\r\n',
+        _headers: [Object],
+        _headerNames: [Object],
+        _onPendingData: null,
+        agent: [Object],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'POST',
+        path: '/api/mobileutility/v1/validations',
+        _ended: true,
+        res: [Circular],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null },
+     request: 
+      Request {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 5,
+        _maxListeners: undefined,
+        method: 'POST',
+        uri: [Object],
+        body: '{"serialNumber":"0660334865962099","channelId":1,"format":"1","source":"192.168.100.100","deviceId":"AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE","emailAddress":"userid08@dummy.co.nz"}',
+        resolveWithFullResponse: true,
+        readable: true,
+        writable: true,
+        explicitMethod: true,
+        _qs: [Object],
+        _auth: [Object],
+        _oauth: [Object],
+        _multipart: [Object],
+        _redirect: [Object],
+        _tunnel: [Object],
+        _rp_resolve: [Function],
+        _rp_reject: [Function],
+        _rp_promise: [Object],
+        _rp_callbackOrig: undefined,
+        callback: [Function],
+        _rp_options: [Object],
+        headers: [Object],
+        setHeader: [Function],
+        hasHeader: [Function],
+        getHeader: [Function],
+        removeHeader: [Function],
+        localAddress: undefined,
+        pool: {},
+        dests: [],
+        __isRequestRequest: true,
+        _callback: [Function: RP$callback],
+        proxy: null,
+        tunnel: false,
+        setHost: true,
+        originalCookieHeader: undefined,
+        _disableCookies: true,
+        _jar: undefined,
+        port: '8000',
+        host: 'localhost',
+        path: '/api/mobileutility/v1/validations',
+        _json: true,
+        httpModule: [Object],
+        agentClass: [Object],
+        agent: [Object],
+        _started: true,
+        href: 'http://localhost:8000/api/mobileutility/v1/validations',
+        req: [Object],
+        ntick: true,
+        response: [Circular],
+        originalHost: 'localhost:8000',
+        originalHostHeaderName: 'host',
+        responseContent: [Circular],
+        _destdata: true,
+        _ended: true,
+        _callbackCalled: true },
+     toJSON: [Function: responseToJSON],
+     caseless: Caseless { dict: [Object] },
+     read: [Function],
+     body: { response: [Object] } } }
+  [32m✔ When I make a POST request to "/validations"[39m
+  [32m✔ Then The response property "response.status" should be "failure"[39m
+  [32m✔ And The response property "response.code" should be "8001"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
   Scenario: IK TICKET - Host Response 1
@@ -764,6 +1376,7 @@ Feature: Ticket checker examples
   [32m✔ Then The response property "response.status" should be "success"[39m
   [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1202"[39m
+  [32m✔ And The response property "validationResult.majorPrizeMessage" should be "A MAJOR PRIZE"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
   Scenario: IK TICKET - Host Response 3
@@ -800,7 +1413,7 @@ Feature: Ticket checker examples
       """[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1203"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -819,7 +1432,7 @@ Feature: Ticket checker examples
       """[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1204"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -838,7 +1451,7 @@ Feature: Ticket checker examples
       """[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1205"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -857,7 +1470,7 @@ Feature: Ticket checker examples
       """[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1206"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -1276,7 +1889,7 @@ Feature: Ticket checker examples
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
   [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
-  [32m✔ And The response property "validationResult.resultCode" should be "3242"[39m
+  [32m✔ And The response property "validationResult.resultCode" should be "1201"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
   Scenario: IK TICKET - Free Ticket Winner
@@ -1295,7 +1908,7 @@ Feature: Ticket checker examples
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
   [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
-  [32m✔ And The response property "validationResult.resultCode" should be "3242"[39m
+  [32m✔ And The response property "validationResult.resultCode" should be "1201"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
   Scenario: IK TICKET - BAD_UNIT_CHECK_DIGIT
@@ -1372,6 +1985,7 @@ Feature: Ticket checker examples
   [32m✔ Then The response property "response.status" should be "success"[39m
   [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "3245"[39m
+  [32m✔ And The response property "validationResult.majorPrizeMessage" should be "A MAJOR PRIZE"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
   Scenario: IK TICKET - FREEZE_CLAIM
@@ -1429,101 +2043,7 @@ Feature: Ticket checker examples
   [32m✔ Then The response property "response.status" should be "success"[39m
   [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "3248"[39m
-
-  [36m@baseUrl @baseUrl-mobileutility[39m
-  Scenario: IK TICKET - BAD_UNIT_CHECK_DIGIT
-  [32m✔ Given The json request data[39m
-      [32m"""
-      {
-        "serialNumber": "9430016273991111",
-        "checkDigits": "1111",
-        "channelId": 1,
-        "format": "1",
-        "source": "192.168.100.100",
-        "deviceId": "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE",
-        "emailAddress": "userid08@dummy.co.nz"
-      }    
-      """[39m
-  [32m✔ When I make a POST request to "/validations"[39m
-  [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
-  [32m✔ And The response property "validationResult.resultCode" should be "9001"[39m
-
-  [36m@baseUrl @baseUrl-mobileutility[39m
-  Scenario: IK TICKET - BAD_UNIT_CHECK_DIGIT
-  [32m✔ Given The json request data[39m
-      [32m"""
-      {
-        "serialNumber": "9430016273992222",
-        "checkDigits": "2222",
-        "channelId": 1,
-        "format": "1",
-        "source": "192.168.100.100",
-        "deviceId": "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE",
-        "emailAddress": "userid08@dummy.co.nz"
-      }    
-      """[39m
-  [32m✔ When I make a POST request to "/validations"[39m
-  [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
-  [32m✔ And The response property "validationResult.resultCode" should be "9001"[39m
-
-  [36m@baseUrl @baseUrl-mobileutility[39m
-  Scenario: IK TICKET - BAD_UNIT_CHECK_DIGIT
-  [32m✔ Given The json request data[39m
-      [32m"""
-      {
-        "serialNumber": "9430016273993333",
-        "checkDigits": "3333",
-        "channelId": 1,
-        "format": "1",
-        "source": "192.168.100.100",
-        "deviceId": "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE",
-        "emailAddress": "userid08@dummy.co.nz"
-      }    
-      """[39m
-  [32m✔ When I make a POST request to "/validations"[39m
-  [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
-  [32m✔ And The response property "validationResult.resultCode" should be "9001"[39m
-
-  [36m@baseUrl @baseUrl-mobileutility[39m
-  Scenario: IK TICKET - BAD_UNIT_CHECK_DIGIT
-  [32m✔ Given The json request data[39m
-      [32m"""
-      {
-        "serialNumber": "9430016273994444",
-        "checkDigits": "4444",
-        "channelId": 1,
-        "format": "1",
-        "source": "192.168.100.100",
-        "deviceId": "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE",
-        "emailAddress": "userid08@dummy.co.nz"
-      }    
-      """[39m
-  [32m✔ When I make a POST request to "/validations"[39m
-  [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
-  [32m✔ And The response property "validationResult.resultCode" should be "9001"[39m
-
-  [36m@baseUrl @baseUrl-mobileutility[39m
-  Scenario: IK TICKET - INVALID_TICKET_NUMBER
-  [32m✔ Given The json request data[39m
-      [32m"""
-      {
-        "serialNumber": "9430016273995555",
-        "checkDigits": "5555",
-        "channelId": 1,
-        "format": "1",
-        "source": "192.168.100.100",
-        "deviceId": "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE",
-        "emailAddress": "userid08@dummy.co.nz"
-      }    
-      """[39m
-  [32m✔ When I make a POST request to "/validations"[39m
-  [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
-  [32m✔ And The response property "validationResult.resultCode" should be "9001"[39m
+  [32m✔ And The response property "validationResult.majorPrizeMessage" should be "A MAJOR PRIZE"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
   Scenario: IK TICKET - FUNCTION_SUPRESSED
@@ -1906,25 +2426,6 @@ Feature: Ticket checker examples
   [32m✔ And The response property "validationResult.resultCode" should be "3237"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
-  Scenario: IK TICKET - BAD_UNIT_CHECK_DIGIT
-  [32m✔ Given The json request data[39m
-      [32m"""
-      {
-        "serialNumber": "9891420704811979306805",
-        "checkDigits": "6805",
-        "channelId": 1,
-        "format": "1",
-        "source": "192.168.100.100",
-        "deviceId": "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE",
-        "emailAddress": "userid08@dummy.co.nz"
-      }    
-      """[39m
-  [32m✔ When I make a POST request to "/validations"[39m
-  [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
-  [32m✔ And The response property "validationResult.resultCode" should be "9001"[39m
-
-  [36m@baseUrl @baseUrl-mobileutility[39m
   Scenario: IK TICKET - GAME_NOT_ACTIVE
   [32m✔ Given The json request data[39m
       [32m"""
@@ -1981,6 +2482,321 @@ Feature: Ticket checker examples
   [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "3241"[39m
 
-106 scenarios ([32m106 passed[39m)
-530 steps ([32m530 passed[39m)
-0m07.921s
+  [36m@baseUrl @baseUrl-mobileutility[39m
+  Scenario: IK TICKET - MISSING_SCENARIO
+  [32m✔ Given The json request data[39m
+      [32m"""
+      {
+        "serialNumber": "9430016273912345671234",
+        "checkDigits": "1234",
+        "channelId": 1,
+        "format": "1",
+        "source": "192.168.100.100",
+        "deviceId": "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE",
+        "emailAddress": "userid08@dummy.co.nz"
+      }    
+      """[39m
+{ StatusCodeError: 400 - {"response":{"status":"failure","code":8001,"message":"Unable to determine ticket outcome. Please take your ticket to the nearest Lotto store"}}
+    at new StatusCodeError (/Users/fcontreras/GITREPO/skunkworks.mobile-utility-mock/node_modules/request-promise-core/lib/errors.js:32:15)
+    at Request.plumbing.callback (/Users/fcontreras/GITREPO/skunkworks.mobile-utility-mock/node_modules/request-promise-core/lib/plumbing.js:104:33)
+    at Request.RP$callback [as _callback] (/Users/fcontreras/GITREPO/skunkworks.mobile-utility-mock/node_modules/request-promise-core/lib/plumbing.js:46:31)
+    at Request.self.callback (/Users/fcontreras/GITREPO/skunkworks.mobile-utility-mock/node_modules/request/request.js:188:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:194:7)
+    at Request.<anonymous> (/Users/fcontreras/GITREPO/skunkworks.mobile-utility-mock/node_modules/request/request.js:1171:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:191:7)
+    at IncomingMessage.<anonymous> (/Users/fcontreras/GITREPO/skunkworks.mobile-utility-mock/node_modules/request/request.js:1091:12)
+    at Object.onceWrapper (events.js:293:19)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:188:7)
+    at endReadableNT (_stream_readable.js:975:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+  name: 'StatusCodeError',
+  statusCode: 400,
+  message: '400 - {"response":{"status":"failure","code":8001,"message":"Unable to determine ticket outcome. Please take your ticket to the nearest Lotto store"}}',
+  error: 
+   { response: 
+      { status: 'failure',
+        code: 8001,
+        message: 'Unable to determine ticket outcome. Please take your ticket to the nearest Lotto store' } },
+  options: 
+   { method: 'POST',
+     uri: 'http://localhost:8000/api/mobileutility/v1/validations',
+     body: 
+      { serialNumber: '9430016273912345671234',
+        checkDigits: '1234',
+        channelId: 1,
+        format: '1',
+        source: '192.168.100.100',
+        deviceId: 'AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE',
+        emailAddress: 'userid08@dummy.co.nz' },
+     json: true,
+     resolveWithFullResponse: true,
+     callback: [Function: RP$callback],
+     transform: undefined,
+     simple: true,
+     transform2xxOnly: false },
+  response: 
+   IncomingMessage {
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: true,
+        endEmitted: true,
+        reading: false,
+        sync: true,
+        needReadable: false,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        defaultEncoding: 'utf8',
+        ranOut: false,
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: false,
+     domain: null,
+     _events: 
+      { end: [Object],
+        close: [Object],
+        data: [Function],
+        error: [Function] },
+     _eventsCount: 4,
+     _maxListeners: undefined,
+     socket: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 8,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        destroyed: true,
+        _bytesDispatched: 375,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Object],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1 },
+     connection: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 8,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        destroyed: true,
+        _bytesDispatched: 375,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Object],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1 },
+     httpVersionMajor: 1,
+     httpVersionMinor: 1,
+     httpVersion: '1.1',
+     complete: true,
+     headers: 
+      { 'content-type': 'application/json; charset=utf-8',
+        connection: 'close',
+        date: 'Sun, 27 Aug 2017 22:22:35 GMT',
+        'transfer-encoding': 'chunked' },
+     rawHeaders: 
+      [ 'content-type',
+        'application/json; charset=utf-8',
+        'Connection',
+        'close',
+        'Date',
+        'Sun, 27 Aug 2017 22:22:35 GMT',
+        'Transfer-Encoding',
+        'chunked' ],
+     trailers: {},
+     rawTrailers: [],
+     upgrade: false,
+     url: '',
+     method: null,
+     statusCode: 400,
+     statusMessage: 'Bad Request',
+     client: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 8,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        destroyed: true,
+        _bytesDispatched: 375,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Object],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1 },
+     _consuming: true,
+     _dumped: false,
+     req: 
+      ClientRequest {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 5,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: false,
+        _removedHeader: [Object],
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [Object],
+        connection: [Object],
+        _header: 'POST /api/mobileutility/v1/validations HTTP/1.1\r\nhost: localhost:8000\r\naccept: application/json\r\ncontent-type: application/json\r\ncontent-length: 204\r\nConnection: close\r\n\r\n',
+        _headers: [Object],
+        _headerNames: [Object],
+        _onPendingData: null,
+        agent: [Object],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'POST',
+        path: '/api/mobileutility/v1/validations',
+        _ended: true,
+        res: [Circular],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null },
+     request: 
+      Request {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 5,
+        _maxListeners: undefined,
+        method: 'POST',
+        uri: [Object],
+        body: '{"serialNumber":"9430016273912345671234","checkDigits":"1234","channelId":1,"format":"1","source":"192.168.100.100","deviceId":"AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE","emailAddress":"userid08@dummy.co.nz"}',
+        resolveWithFullResponse: true,
+        readable: true,
+        writable: true,
+        explicitMethod: true,
+        _qs: [Object],
+        _auth: [Object],
+        _oauth: [Object],
+        _multipart: [Object],
+        _redirect: [Object],
+        _tunnel: [Object],
+        _rp_resolve: [Function],
+        _rp_reject: [Function],
+        _rp_promise: [Object],
+        _rp_callbackOrig: undefined,
+        callback: [Function],
+        _rp_options: [Object],
+        headers: [Object],
+        setHeader: [Function],
+        hasHeader: [Function],
+        getHeader: [Function],
+        removeHeader: [Function],
+        localAddress: undefined,
+        pool: {},
+        dests: [],
+        __isRequestRequest: true,
+        _callback: [Function: RP$callback],
+        proxy: null,
+        tunnel: false,
+        setHost: true,
+        originalCookieHeader: undefined,
+        _disableCookies: true,
+        _jar: undefined,
+        port: '8000',
+        host: 'localhost',
+        path: '/api/mobileutility/v1/validations',
+        _json: true,
+        httpModule: [Object],
+        agentClass: [Object],
+        agent: [Object],
+        _started: true,
+        href: 'http://localhost:8000/api/mobileutility/v1/validations',
+        req: [Object],
+        ntick: true,
+        response: [Circular],
+        originalHost: 'localhost:8000',
+        originalHostHeaderName: 'host',
+        responseContent: [Circular],
+        _destdata: true,
+        _ended: true,
+        _callbackCalled: true },
+     toJSON: [Function: responseToJSON],
+     caseless: Caseless { dict: [Object] },
+     read: [Function],
+     body: { response: [Object] } } }
+  [32m✔ When I make a POST request to "/validations"[39m
+  [32m✔ Then The response property "response.status" should be "failure"[39m
+  [32m✔ And The response property "response.code" should be "8001"[39m
+
+102 scenarios ([32m102 passed[39m)
+513 steps ([32m513 passed[39m)
+0m08.050s

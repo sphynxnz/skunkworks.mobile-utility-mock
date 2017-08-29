@@ -70,7 +70,7 @@ Feature: Ticket checker examples
   [32m✔ And the property "deviceId" is set to "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE"[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "3105"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -92,7 +92,7 @@ Feature: Ticket checker examples
   [32m✔ And the property "deviceId" is set to "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE"[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1101"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -103,7 +103,7 @@ Feature: Ticket checker examples
   [32m✔ And the property "deviceId" is set to "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE"[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1102"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -114,7 +114,7 @@ Feature: Ticket checker examples
   [32m✔ And the property "deviceId" is set to "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE"[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "3107"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -147,7 +147,7 @@ Feature: Ticket checker examples
   [32m✔ And the property "deviceId" is set to "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE"[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "3107"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -169,7 +169,7 @@ Feature: Ticket checker examples
   [32m✔ And the property "deviceId" is set to "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE"[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1103"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -246,7 +246,7 @@ Feature: Ticket checker examples
   [32m✔ And the property "deviceId" is set to "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE"[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1106"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -257,7 +257,7 @@ Feature: Ticket checker examples
   [32m✔ And the property "deviceId" is set to "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE"[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1107"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -334,7 +334,7 @@ Feature: Ticket checker examples
   [32m✔ And the property "deviceId" is set to "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE"[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1111"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -438,17 +438,6 @@ Feature: Ticket checker examples
 
   [36m@baseUrl @baseUrl-mobileutility[39m
   Scenario: Ticket checking scenarios for Online and IK tickets
-  [32m✔ Given the property "serialNumber" is set to "0500626298931317"[39m
-  [32m✔ And the property "channelId" is set to "1"[39m
-  [32m✔ And the property "source" is set to "192.168.8.8"[39m
-  [32m✔ And the property "deviceId" is set to "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE"[39m
-  [32m✔ When I make a POST request to "/validations"[39m
-  [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
-  [32m✔ And The response property "validationResult.resultCode" should be "3117"[39m
-
-  [36m@baseUrl @baseUrl-mobileutility[39m
-  Scenario: Ticket checking scenarios for Online and IK tickets
   [32m✔ Given the property "serialNumber" is set to "9891420700187937509924"[39m
   [32m✔ And the property "channelId" is set to "1"[39m
   [32m✔ And the property "source" is set to "192.168.8.8"[39m
@@ -488,7 +477,7 @@ Feature: Ticket checker examples
   [32m✔ And the property "deviceId" is set to "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE"[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1203"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -499,7 +488,7 @@ Feature: Ticket checker examples
   [32m✔ And the property "deviceId" is set to "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE"[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1204"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -510,7 +499,7 @@ Feature: Ticket checker examples
   [32m✔ And the property "deviceId" is set to "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE"[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1205"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -521,7 +510,7 @@ Feature: Ticket checker examples
   [32m✔ And the property "deviceId" is set to "AAAAAAAA-BBBB-4CCC-8DDD-EEEEEEEEEEEE"[39m
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
-  [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
+  [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "1206"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
@@ -764,7 +753,7 @@ Feature: Ticket checker examples
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
   [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
-  [32m✔ And The response property "validationResult.resultCode" should be "3242"[39m
+  [32m✔ And The response property "validationResult.resultCode" should be "1201"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
   Scenario: Ticket checking scenarios for Online and IK tickets
@@ -775,7 +764,7 @@ Feature: Ticket checker examples
   [32m✔ When I make a POST request to "/validations"[39m
   [32m✔ Then The response property "response.status" should be "success"[39m
   [32m✔ And The response property "validationResult.resultType" should be "WINNER"[39m
-  [32m✔ And The response property "validationResult.resultCode" should be "3242"[39m
+  [32m✔ And The response property "validationResult.resultCode" should be "1201"[39m
 
   [36m@baseUrl @baseUrl-mobileutility[39m
   Scenario: Ticket checking scenarios for Online and IK tickets
@@ -1173,6 +1162,6 @@ Feature: Ticket checker examples
   [32m✔ And The response property "validationResult.resultType" should be "OTHER"[39m
   [32m✔ And The response property "validationResult.resultCode" should be "3241"[39m
 
-106 scenarios ([32m106 passed[39m)
-848 steps ([32m848 passed[39m)
-0m08.128s
+105 scenarios ([32m105 passed[39m)
+840 steps ([32m840 passed[39m)
+0m08.291s

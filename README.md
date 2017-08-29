@@ -38,7 +38,7 @@ This is the spreadsheet containing the ticket checking scenarios used for this m
 ### 1. Download or clone repository
 
 ```bash
-git clone https://github.com/sphynxnz/skunkworks.instant-play-mock.git
+git clone https://github.com/sphynxnz/skunkworks.mobile-utility-mock.git
 ```
 
 ### 2. Install required npm packages
@@ -116,6 +116,112 @@ npm run test:finder
 
 This is a sample test run output [test-finder.out](https://github.com/sphynxnz/skunkworks.mobile-utility-mock/blob/master/test-finder.out) which contains ANSI escape codes for displaying colours in a terminal.
 
+## Generating Mock Responses File for Ticket Checking
+
+The mock responses file for ticket checking was generated using the following tools:
++ mountebank
++ Soap UI
++ gen-imposter.js 
+
+These are the steps to generate the ticket checking mock responses file using the tools above:
+
+**Prerequisite**
+The CAT2 mobile utility service on dnk1/2 must first be configured to point to the Soap UI ESI mock service that is currently hosted on 192.168.200.64 with the service endpoint at http://192.168.200.64:8088/esiwebservice?wsdl and runs this configuration file: [ESI-SW-Ticket-Validation-Only-soapui-project-ALIGN-20170823.xml](https://github.com/sphynxnz/skunkworks.mobile-utility-mock/blob/master/verification/ESI-SW-Ticket-Validation-Only-soapui-project-ALIGN-20170823.xml)
+
+**1. Set up mountebank proxy**
+
+1.1 Start mountebank by invoking the following command. This assumes that mountebank was not installed globally and is being invoked from where this package is installed.
+
+```bash
+node ./node_modules/.bin/mb
+```
+
+1.2 Set up mountebank proxy to capture request/responses to and from the mobile utility service in CAT2. The command below will listen for incoming requests at port 8000 and redirect those requests to the CAT2 mobile utility service listening at port 80 at the service endpoint http://192.168.102.196
+
+```bash
+curl -X POST \
+  http://localhost:2525/imposters \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 0480c1ec-5491-c0ba-94bf-527d39b87d28' \
+  -d '{
+  "port": 8000,
+  "protocol": "http",
+  "name": "proxyAlways",
+  "stubs": [
+    {
+      "responses": [
+        {
+          "proxy": {
+            "to": "http://192.168.102.196",
+            "mode": "proxyAlways",
+            "predicateGenerators": [
+              {
+                "matches": {
+                  "method": true,
+                  "path": true
+                }
+              }, {
+              	"matches": {
+              	  "body": true
+              	},
+              	"jsonpath": {
+              		"selector": "$..serialNumber"
+              	}
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}'
+```
+
+**2. Run test scenarios to generate requests/responses**
+
+Run the ticket checking test scenarios defined in **~/skunkworks.mobile-utility-mock/test/ticketchecker.feature** by invoking the following command:
+
+```bash
+npm run test:checker
+```
+
+**3. Fetch the requests/responses saved by the mountebank proxy and save to a file**
+
+The following command will fetch the requests/responses, display them on the terminal and save the output to the file [cat2-checker-capture.json](https://github.com/sphynxnz/skunkworks.mobile-utility-mock/blob/master/verification/cat2-checker-capture.json)
+
+```bash
+curl -X GET http://localhost:2525/imposters/8000 | tee cat2-checker-capture.json
+```
+**4. Generate the mountebank mock file (imposter)**
+
+The following command will generate the mountebank ticket checker mock (imposter) using the data from the proxy and save the output to the file [cat2-checker-imposter.json](https://github.com/sphynxnz/skunkworks.mobile-utility-mock/blob/master/verification/cat2-checker-imposter.json)
+
+```bash
+node ./gen-imposter.js --in cat2-checker-capture.json --out cat2-checker-imposter.json
+```
+
+**5. Run the ticket checker mock using mountebank**
+
+To use the mock service for ticket checking generated from the steps above, invoke the following command:
+
+```bash
+node ./node_modules/.bin/mb --configfile ./verification/cat2-checker-imposter.json
+```
+
+Once mountebank is up and running, run the ticket checking test scenarios as follows:
+```bash
+npm run test:checker
+```
+> **Note 1:** Running this test against the generated ticket checker mock service will result to three (3) failed scenarios as follows:
+
++ OL TICKET - INVALID_TICKET_NUMBER
++ OL TICKET - PAID_BY_EFT - Using SoapUI mock, simulates timeout
++ IK TICKET - BAD_UNIT_CHECK_DIGIT
+
+> The current mobile utility service in CAT2 (which is exactly the same version as the one in production), has a bug and fails to handle online (OL) and IK invalid ticket scenario as listed above. It also fails to send the proper response message for timeout where the format of the message is slightly different from the standard results scenarios.
+
+> **Note 2:** The mock service in this package supports both the ticket checking and stores finder. The mock file [mobile-utility-imposter.json](https://github.com/sphynxnz/skunkworks.mobile-utility-mock/blob/master/mobile-utility-imposter.json) contains both the ticket checking and stores finder mock requests and response. The stubs for the stores finder were generated in exactly the same way as the ticket checker using a nodejs implementation of the mobile utility service.
 
 | _EOD_ |
 |---|

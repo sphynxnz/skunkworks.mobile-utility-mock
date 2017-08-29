@@ -23,6 +23,7 @@ Feature: Stores finder examples
   Scenario: Store closest to Lotto NZ Office
   [32m✔ Given longitude set to 174.779520[39m
   [32m✔ And latitude set to -36.872087[39m
+  [32m✔ And maxcount set to 1[39m
   [32m✔ When I fetch store locations[39m
   [32m✔ Then The response status code should be "200"[39m
   [32m✔ And The closest store is "Countdown Newmarket"[39m
@@ -11673,5 +11674,5 @@ stores[0]:Wigram New World, stores[1]=Pak N Save Rangiora
   [32m✔ And The closest store is "Wyndham Four Square"[39m
 
 1458 scenarios ([32m1458 passed[39m)
-7287 steps ([32m7287 passed[39m)
-2m38.194s
+7288 steps ([32m7288 passed[39m)
+3m05.273s
